@@ -246,7 +246,16 @@ body {
 .skill-item.hidden {
   display: none;
 }
+.level-bar {
+  width: 100%;
+  height: 8px;
+  background: #2a2a2a;
+}
 
+.level-fill {
+  height: 8px;
+  background: #4caf50;
+}
 /* ============================================
    Social Links
    ============================================ */
