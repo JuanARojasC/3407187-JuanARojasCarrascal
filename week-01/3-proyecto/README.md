@@ -1,4 +1,4 @@
-# Ficha de [Tu Dominio] - [Tu Nombre]
+# Ficha de [Plataforma de Servicios de Traducción] - [Juan Andres Rojas Carrascal]
 
 ## 📋 Información
 - **Nombre**: [Juan Andres Rojas Carrascal]
@@ -30,4 +30,5 @@
 - Código ES2023: [100]%
 - Código Limpio: [90]%
 - Adaptación al Dominio: [80]%
+
 - **Total Estimado**: [85]%
