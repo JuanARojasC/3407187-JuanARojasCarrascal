@@ -1,4 +1,4 @@
-/WEEK 01
+//WEEK 01
 const entityData = {
   nameEmpress: 'GlobalText',
   description: 'Professional document and media translation',
@@ -67,7 +67,7 @@ const renderBasicInfo = () => {
   entityDescription.textContent = description;
   userEmail.textContent = email;
   userPhone.textContent = phone;
-  userLocation.textContent = 📍 ${location};
+  userLocation.textContent =` 📍 ${location}`;
 };
 
 // ITEMS
