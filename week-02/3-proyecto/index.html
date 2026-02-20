@@ -9,25 +9,6 @@
 </head>
 <body>
   <div class="container">
-    <!--
-      ============================================
-      NOTA PARA EL APRENDIZ:
-      ============================================
-      Este HTML es una plantilla genérica.
-      Debes adaptarlo a tu dominio asignado:
-
-      1. Cambia todos los textos de "Elemento" a tu entidad
-      2. Cambia las categorías por las de tu dominio
-      3. Agrega campos adicionales si tu dominio lo requiere
-      4. Cambia emojis para que sean coherentes con tu dominio
-
-      EJEMPLO (Planetario - NO es un dominio asignable):
-      - "Elementos" → "Cuerpos Celestes"
-      - Categorías: Planeta, Estrella, Asteroide, etc.
-      ============================================
-    -->
-
-    <!-- Header -->
     <header class="header">
   
       <h1>Global Text</h1>
@@ -39,8 +20,6 @@
         <span class="stat">Inactivos: <strong id="stat-inactive">0</strong></span>
       </div>
     </header>
-
-    <!-- Item Form -->
     <section class="form-section">
    
       <h2 id="form-title">➕ Nuevo Elemento</h2>
@@ -69,15 +48,8 @@
 
         <div class="form-row">
           <div class="form-group">
-            <!-- TODO: Cambia las categorías según tu dominio -->
             <label for="item-category">Categoría</label>
             <select id="item-category">
-              <!--
-                EJEMPLO Planetario:
-                <option value="planet">🪐 Planeta</option>
-                <option value="star">⭐ Estrella</option>
-                <option value="asteroid">☄️ Asteroide</option>
-              -->
               <option value="Traduccion">🔹 Traduccion</option>
               <option value="Localizacion">🔸 Localizacion</option>
               <option value="Revision">🔷 Revision</option>
@@ -86,7 +58,6 @@
           </div>
 
           <div class="form-group">
-            <!-- TODO: Opcionalmente renombra "Prioridad" según tu dominio -->
             <label for="item-priority">Prioridad/Nivel</label>
             <select id="item-priority">
               <option value="low">🟢 Baja</option>
@@ -125,7 +96,6 @@
           <label for="filter-status">Estado:</label>
           <select id="filter-status">
             <option value="all">Todos</option>
-            <!-- TODO: Cambia los términos según tu dominio -->
             <option value="active">Activos</option>
             <option value="inactive">Inactivos</option>
           </select>
@@ -135,11 +105,10 @@
           <label for="filter-category">Categoría:</label>
           <select id="filter-category">
             <option value="all">Todas</option>
-            <!-- TODO: Repite las mismas categorías del formulario -->
-            <option value="category1">Traduccion</option>
-            <option value="category2">Localizacion</option>
-            <option value="category3">Revision</option>
-            <option value="other">Otro</option>
+            <option value="Traduccion">Traduccion</option>
+            <option value="Localizacion">Localizacion</option>
+            <option value="Revision">Revision</option>
+            <option value="Otro">Otro</option>
           </select>
         </div>
 
@@ -163,11 +132,8 @@
         </div>
       </div>
     </section>
-
-    <!-- Item List -->
     <section class="items-section">
       <div class="items-header">
-        <!-- TODO: Cambia el título -->
         <h2>📝 Lista de Elementos</h2>
         <button class="btn btn-outline" id="clear-inactive">
           🗑️ Limpiar Inactivos
@@ -175,7 +141,6 @@
       </div>
 
       <div id="item-list" class="item-list">
-        <!-- Los elementos se renderizarán aquí con JavaScript -->
       </div>
 
       <div id="empty-state" class="empty-state">
@@ -183,17 +148,12 @@
         <p class="empty-state-hint">Crea tu primer elemento usando el formulario arriba</p>
       </div>
     </section>
-
-    <!-- Detailed Stats -->
     <section class="detailed-stats">
       <h3>📊 Estadísticas Detalladas</h3>
       <div id="stats-details" class="stats-grid">
-        <!-- Las estadísticas se renderizarán aquí con JavaScript -->
       </div>
     </section>
   </div>
-
-  <!-- Script principal -->
   <script src="starter/script.js"></script>
 </body>
 </html>
