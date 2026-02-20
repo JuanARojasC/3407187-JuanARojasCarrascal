@@ -308,12 +308,24 @@ const attachEventListeners = () => {
       }
     });
 };
+const renderDetailedStats = stats => {
+  const container = document.getElementById('stats-details');
+  container.innerHTML = `
+    <div class="stat-card"><h4>Total</h4><p>${stats.total}</p></div>
+    <div class="stat-card"><h4>Activos</h4><p>${stats.active}</p></div>
+    <div class="stat-card"><h4>Inactivos</h4><p>${stats.inactive}</p></div>
+  `;
+};
 
 // Inicializar aplicación
 const init = () => {
   items = loadItems();
   renderItems(items);
-  renderStats(getStats(items));
+
+  const stats = getStats(items);
+  renderStats(stats);
+  renderDetailedStats(stats);
+
   attachEventListeners();
 };
 
